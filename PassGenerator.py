@@ -24,6 +24,7 @@ while True:
         print(
             "  Error!\n  Please choose between option 1 or 2.")
         print(' ', '-' * 82, '\n')
+        time.sleep(1)
     else:
         if choice == "1":
             while True:
@@ -34,6 +35,7 @@ while True:
                     print(
                         "  Error!\n  The entered value for the password is not correct, please enter a positive number.")
                     print(' ', '-' * 82, '\n')
+                    time.sleep(1)
                 else:
                     # Define the character set for the alphanumeric password
                     characters = string.ascii_letters + string.digits + string.punctuation
@@ -50,6 +52,7 @@ while True:
                     print('\n', '-' * 82)
                     print("Error!\nThe entered value for the password is not correct, please enter a positive number.")
                     print(' ', '-' * 82, '\n')
+                    time.sleep(1)
                 else:
                     # Generate the numeric password
                     random.seed(time.time())
